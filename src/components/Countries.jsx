@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { Filter } from './Filter/Filter'
 // import { SelectSearch } from './selectSearch/SelectSearch'
 
@@ -62,6 +63,7 @@ export default function Countries() {
                 )
                 ))
                 : ( countries.map(({ name, capital, region, population, flags }) => (
+                <Link to={`/${capital}`} key={name}>
                 <div className="col s6 m3">
                     <div className="card">
                     <div className="card-image">
@@ -81,6 +83,7 @@ export default function Countries() {
                     </div>
                     </div>
                 </div>
+                </Link>
                 )
             ))}
             </div>

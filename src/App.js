@@ -1,7 +1,7 @@
 import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import Countries from './components/Countries';
-import { Country } from './components/Country';
+import Country from './components/country/Country';
 
 import 'materialize-css/dist/css/materialize.min.css';
 import Header from './components/Header/Header';
@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
     <Routes>
       <Route path='/' element={<Countries />} />   
-      <Route path="/:name" element={<Country />} />
+      <Route path="/:capital" element={<Country />} />
     </Routes>
     </BrowserRouter>
     </>
