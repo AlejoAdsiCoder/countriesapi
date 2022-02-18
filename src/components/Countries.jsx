@@ -39,10 +39,11 @@ export default function Countries() {
             </div>
             <div className="row">
             {searchInput.length > 0  ? (
-                filtered.map(({ name, capital, region, population }) => (
+                filtered.map(({ name, capital, region, population, flags }) => (
                 <div className="col s6 m3">
                     <div className="card">
                     <div className="card-image">
+                        <img src={flags.png} alt={name + " flag"} />
                     </div>
                     <div className="card-content">
                         <span className="card-title"> {name.common}</span>
