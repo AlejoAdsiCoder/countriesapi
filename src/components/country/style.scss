@@ -1,0 +1,40 @@
+body {
+    background: hsl(207, 26%, 17%);
+}
+
+.nav-wrapper {
+    @extend .blue !optional;
+    margin-bottom: 12px;
+
+}
+
+.btn-back {
+    margin: 12px auto;
+    padding: 0 0.75rem;
+}
+
+.col {
+    padding: 0;
+}
+
+.country-flag img {
+    width: 86%;
+}
+
+.country-flag {
+    padding: 0 0;
+}
+
+.country-inf {
+    color: hsl(0, 0%, 100%);
+    .waves-effect {
+        margin: 0 6px;
+    }
+}
+
+@media (max-width: 680px) {
+    .country-flag img {
+        width: 100%;
+
+    }
+}

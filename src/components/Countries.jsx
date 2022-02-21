@@ -34,6 +34,7 @@ export default function Countries() {
 
     return (
         <>  
+        <section className="container">
             <div className="filtros">
                 <Filter searchCountries={searchCountries} searchInput={searchInput} />
                 {/* <SelectSearch setCountries={setCountries} /> */}
@@ -87,6 +88,7 @@ export default function Countries() {
                 )
             ))}
             </div>
+        </section>
         </>
     )
 }
